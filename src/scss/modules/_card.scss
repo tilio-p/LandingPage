@@ -71,19 +71,62 @@
 // VARIANTES VISUELLES
 // -----------------------------------------------
 
-// Image de fond en soft-light (ex: affiche Jiro)
+// Tous les éléments centrés horizontalement
+.card--centered {
+  align-items: center;
+
+  h3,
+  .card_titre,
+  .card_label,
+  .card_meta {
+    text-align: center;
+  }
+}
+
+// Carte chef principal : photo en background soft-light, texte ancré en bas
+.card--chef-bg {
+  background-image: url("../Images/Chef_Nakamura.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-blend-mode: soft-light;
+  min-height: 220px;
+  align-items: center;
+  justify-content: center;
+
+  .card_titre {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-brown-night);
+  }
+
+  .card_label {
+    text-align: center;
+  }
+
+  .card_cta {
+    align-self: center;
+  }
+}
+
+// Image de fond en soft-light (ex: affiche Jiro) — texte ancré en bas
 .card--film-bg {
   background-image: url("../Images/Jiro_Red.png");
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
+  justify-content: flex-end;
 }
 
-// Image inline dans le flux du contenu de la carte
+// Image inline dans le flux de la carte — taille contenue pour laisser respirer
 .card__img {
-  width: 100%;
+  width: auto;
+  max-width: 80%;
+  max-height: 90px;
   border-radius: 8px;
-  object-fit: cover;
+  align-self: center;
 }
 
 // -----------------------------------------------

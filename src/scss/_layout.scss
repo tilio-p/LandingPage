@@ -98,18 +98,23 @@
   }
 }
 
-// Icônes réseaux sociaux
+// Icônes réseaux sociaux — colonne sur mobile, ligne sur desktop
 .reseaux__nav {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
+  flex-direction: column;
+  gap: 32px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .reseaux__lien {
   font-size: 36px;
-  color: var(--color-linen);
+  color: var(--color-orange);
   transition: opacity 0.2s;
 
   &:hover {
@@ -130,33 +135,40 @@
   flex-wrap: wrap;
 }
 
-// Logos partenaires
+// Logos partenaires — 2×2 sur mobile, 1 ligne sur desktop
 .partners {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   img {
-    height: 36px;
-    width: auto;
+    width: 100px;
+    height: 44px;
+    object-fit: contain;
 
     @media (min-width: 768px) {
-      height: 44px;
+      width: 130px;
+      height: 54px;
     }
   }
 }
 
-// Image section Destination Asie
+// Image section Destination Asie — cachée sur mobile, visible desktop
 .destination__img {
-  width: 100%;
-  border-radius: 13px;
-  object-fit: cover;
-  max-height: 300px;
+  display: none;
 
   @media (min-width: 768px) {
+    display: block;
+    width: 100%;
+    border-radius: 13px;
+    object-fit: cover;
     max-height: 400px;
   }
 

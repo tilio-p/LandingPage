@@ -31,12 +31,12 @@ body {
 .dark {
   background-color: var(--color-brown-night);
   color: var(--color-linen);
-
-  span {
-    color: var(--color-orange);
-  }
 }
 
 span {
   color: var(--color-red);
+}
+
+.link--orange {
+  color: var(--color-orange);
 }
