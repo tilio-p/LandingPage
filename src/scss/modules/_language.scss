@@ -1,10 +1,20 @@
-button {
+.l-language {
   display: flex;
-  padding: 15px 12px;
+  padding: 10px 14px;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  background: var(--Orange, #e8833a);
+  background: var(--color-orange);
   color: white;
   border: none;
+  font-family: Outfit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }

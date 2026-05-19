@@ -1,0 +1,24 @@
+.hero {
+  background-color: var(--color-brown-night);
+  color: var(--color-linen);
+  padding: 60px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  // Sur tablette et desktop : image de fond
+  @media (min-width: 768px) {
+    min-height: 420px;
+    padding: 80px 40px 100px;
+    justify-content: center;
+    background-image: url("../Images/Viet.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 520px;
+    padding: 100px 80px 120px;
+  }
+}

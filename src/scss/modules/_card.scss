@@ -1,24 +1,128 @@
+// -----------------------------------------------
+// CARTE — base
+// -----------------------------------------------
 .card {
   display: flex;
   flex-direction: column;
   background-color: var(--color-red);
   border-radius: 13px;
-  gap: 12px;
-  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  align-items: flex-start;
+  flex: 1;
+
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+// -----------------------------------------------
+// VARIANTES DE TAILLE
+// -----------------------------------------------
+
+// Carte principale (plus grande, plus de padding)
+.card-main {
+  padding: 28px 20px;
+
+  @media (min-width: 768px) {
+    padding: 36px 24px;
+    flex: 1.2;
+  }
+}
+
+// -----------------------------------------------
+// VARIANTES DE COULEUR
+// -----------------------------------------------
+
+.card-rouge {
+  background-color: var(--color-red);
+}
+
+.card-orange {
+  background-color: var(--color-orange);
 }
 
 .card-noir {
   background-color: var(--color-brown-night);
 }
 
-.card p {
-  color: var();
+// Carte claire (sable) : texte sombre
+.card-sable {
+  background-color: var(--color-linen);
+  color: var(--color-brown-night);
+
+  h3,
+  .card_titre {
+    color: var(--color-brown-night);
+  }
+
+  .card_label,
+  .card_meta {
+    color: var(--color-brown-night);
+    opacity: 0.7;
+  }
+
+  .card_cta {
+    color: var(--color-brown-night);
+  }
+}
+
+// -----------------------------------------------
+// VARIANTES VISUELLES
+// -----------------------------------------------
+
+// Image de fond en soft-light (ex: affiche Jiro)
+.card--film-bg {
+  background-image: url("../Images/Jiro_Red.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+}
+
+// Image inline dans le flux du contenu de la carte
+.card__img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+// -----------------------------------------------
+// CONTENU DES CARTES
+// -----------------------------------------------
+
+// Sous-titre / info contextuelle (ex: "Chef étoilé", "Film associé")
+.card_label {
   font-family: Outfit;
   font-size: 10px;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: left;
+  color: var(--color-linen);
+  opacity: 0.8;
 }
 
-.card a {
+// Méta-information (ex: "(États-Unis, 2011)")
+.card_meta {
+  font-family: Outfit;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--color-linen);
+  opacity: 0.8;
+}
+
+// Lien d'action — caché sur mobile, visible sur tablette+
+.card_cta {
   display: none;
+  font-family: Outfit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-linen);
+  text-decoration: underline;
+  margin-top: auto;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

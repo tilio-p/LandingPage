@@ -1,0 +1,32 @@
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 50px;
+  background-color: var(--color-red);
+  color: var(--color-linen);
+  font-family: Outfit;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  // Variante vide (contour seulement)
+  &.cta--empty {
+    background-color: transparent;
+    border: 2px solid var(--color-brown-night);
+    color: var(--color-brown-night);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    padding: 16px 28px;
+  }
+}

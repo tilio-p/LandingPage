@@ -1,5 +1,24 @@
-.l-button {
-  position: fixed;
+// -----------------------------------------------
+// LAYOUT UTILITAIRES
+// Classes réutilisables préfixées l-
+// -----------------------------------------------
+
+.l-section {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 16px;
+  align-items: center;
+  gap: 40px;
+
+  @media (min-width: 768px) {
+    padding: 80px 40px;
+    gap: 50px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 100px 80px;
+    gap: 60px;
+  }
 }
 
 .l-footer {
@@ -14,16 +33,135 @@
   gap: 24px;
 }
 
-.l-section {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 16px;
-  align-items: center;
-  gap: 50 px;
-}
-
+// Rangée pour les deux petites cartes films (côte à côte)
 .l-films_row {
   display: flex;
   flex-direction: row;
-  gap: 4%;
+  gap: 8px;
+  width: 100%;
+}
+
+// -----------------------------------------------
+// LAYOUTS DE SECTIONS SPÉCIFIQUES
+// -----------------------------------------------
+
+// Grille des films : grande carte + 2 petites
+.films_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+
+    .l-films_row {
+      flex: 1;
+      flex-direction: column;
+    }
+  }
+}
+
+// Grille chef : carte chef + colonne film & recette
+.chef__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+// Film associé + recette côte à côte (mobile et desktop)
+.chef_row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex: 1;
+}
+
+// Boutons App Store / Google Play
+.stores {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 44px;
+    width: auto;
+  }
+}
+
+// Icônes réseaux sociaux
+.reseaux__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reseaux__lien {
+  font-size: 36px;
+  color: var(--color-linen);
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+  }
+}
+
+// CTA newsletter côte à côte
+.newsletter__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// Logos partenaires
+.partners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 36px;
+    width: auto;
+
+    @media (min-width: 768px) {
+      height: 44px;
+    }
+  }
+}
+
+// Image section Destination Asie
+.destination__img {
+  width: 100%;
+  border-radius: 13px;
+  object-fit: cover;
+  max-height: 300px;
+
+  @media (min-width: 768px) {
+    max-height: 400px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 700px;
+    max-height: 500px;
+  }
 }

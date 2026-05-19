@@ -12,6 +12,7 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 :root {
@@ -24,16 +25,16 @@ video {
 body {
   color: var(--color-brown-night);
   background-color: var(--color-linen);
-  text-align: center;
   font-family: Fraunces;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
 }
 
 .dark {
   background-color: var(--color-brown-night);
-  color: #f2e8d5;
+  color: var(--color-linen);
+
+  span {
+    color: var(--color-orange);
+  }
 }
 
 span {

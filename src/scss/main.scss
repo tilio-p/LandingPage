@@ -1,9 +1,21 @@
-@import "font";
-@import "base";
-@import "layout";
-@import "modules/footer";
-@import "modules/header";
-@import "modules/language";
-@import "modules/card";
+// -----------------------------------------------
+// GLOBAL
+// -----------------------------------------------
+@import "font"; // Typographie : h1, h2, h3, p, .mystere, .smallText
+@import "base"; // Reset, variables CSS, body, .dark, span
+@import "layout"; // Utilitaires de mise en page
 
+// -----------------------------------------------
+// MODULES (composants réutilisables)
+// -----------------------------------------------
+@import "modules/hero"; // Section hero (titre Asie)
+@import "modules/header"; // En-tête rouge
+@import "modules/footer"; // Pied de page rouge
+@import "modules/language"; // Bouton FR
+@import "modules/card"; // Cartes films / chef / recette
+@import "modules/cta"; // Boutons d'appel à l'action
+
+// -----------------------------------------------
+// GRILLE BOOTSTRAP (utilisée pour les colonnes)
+// -----------------------------------------------
 @import "bootstrap/scss/bootstrap-grid";

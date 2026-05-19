@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>CineGusto | Destinations | Asie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link
@@ -17,22 +17,28 @@
     />
   </head>
   <body>
+
+    <!-- ======= HEADER ======= -->
     <header>
-      <img src="Images/logo_CineGusto.png" alt="" />
+      <img src="Images/logo_CineGusto.png" alt="Logo CineGusto" />
       <nav>
         <a href="">Cinegusto</a>
         <a href="">Destinations</a>
         <a href="">Asie</a>
       </nav>
+      <button class="l-language" aria-label="Changer la langue">FR</button>
     </header>
-    <button class="l-language" aria-label="Changer la langue">FR</button>
-    <div class="hero">
+
+    <!-- ======= HERO ======= -->
+    <section class="hero">
       <h1>Asie</h1>
       <p class="mystere">
         Et si une soirée pouvait vous faire voyager à l'autre bout du monde...
         sans quitter Bulle ?
       </p>
-    </div>
+    </section>
+
+    <!-- ======= CONCEPT ======= -->
     <section class="l-section">
       <h2>Concept</h2>
       <p class="mystere">
@@ -45,21 +51,30 @@
         table, pour ceux qui croient que <span>voyager</span> commence dans
         l'assiette et sur un écran.
       </p>
-      <a href="#" class="cta">Programme complet arrow-right</a>
+      <a href="#" class="cta">
+        Programme complet <i class="fa-solid fa-arrow-right"></i>
+      </a>
     </section>
 
+    <!-- ======= DESTINATION ASIE ======= -->
     <section class="dark l-section">
       <h2>Destination <span>Asie</span></h2>
       <p class="mystere">
         Et si ce soir, ce voyage vous emmenait en Asie ... à travers ses films,
         ses saveurs et ses chefs ?
       </p>
+      <img
+        src="Images/Destination.png"
+        alt="Marché nocturne en Asie"
+        class="destination__img"
+      />
       <p>
         Une destination, une journée, une <span>expérience</span> unique.
-        Découvrez le programme complet sur <a>cinegusto.ch</a>
+        Découvrez le programme complet sur <a href="#">cinegusto.ch</a>
       </p>
     </section>
 
+    <!-- ======= PROJECTION DE FILMS ======= -->
     <section class="l-section">
       <h2>Projection de <span>films</span></h2>
       <p class="mystere">
@@ -86,6 +101,7 @@
       </div>
     </section>
 
+    <!-- ======= L'ENSEMBLE DU CHEF ======= -->
     <section class="dark l-section">
       <h2>L'ensemble du <span>chef</span></h2>
       <p class="mystere">
@@ -99,35 +115,37 @@
           <a href="#" class="card_cta">Découvrir le chef</a>
         </div>
         <div class="chef_row">
-          <div class="card card-rouge">
+          <div class="card card-rouge card--film-bg">
             <p class="card_label">Film associé</p>
             <h3 class="card_titre">Jiro Dreams of Sushi</h3>
           </div>
-
           <div class="card card-orange">
             <h3 class="card_titre">Nigri de Saumon</h3>
+            <img src="Images/Nigri.png" alt="Nigri de saumon laqué au miso blanc" class="card__img" />
             <p class="card_label">Laqué au miso blanc</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ======= L'APPLI VOD ======= -->
     <section class="l-section">
-      <h2>l’appli <span>VOD</span></h2>
+      <h2>l'appli <span>VOD</span></h2>
       <p class="mystere">
         Et si les films que vous alliez voir vous donnaient... faim ?
       </p>
-      <div class="stores">
-        <img src="Images/AppStore.png" alt="" />
-        <img src="Images/PlaysStore.png" alt="" />
-      </div>
       <p>
         Le <span>festival</span> ne s'arrête pas quand les lumières se
         rallument. Téléchargez l'<span>app</span> et continuez le voyage, où que
         vous soyez.
       </p>
+      <div class="stores">
+        <img src="Images/AppStore.png" alt="Télécharger sur l'App Store" />
+        <img src="Images/PlaysStore.png" alt="Télécharger sur Google Play" />
+      </div>
     </section>
 
+    <!-- ======= NOS RÉSEAUX ======= -->
     <section class="dark l-section">
       <h2>Nos <span>réseaux</span></h2>
       <nav class="reseaux__nav" aria-label="Réseaux sociaux">
@@ -159,14 +177,15 @@
       <p>Suivez l'aventure au <span>quotidien</span>.</p>
     </section>
 
+    <!-- ======= LA NEWSLETTER ======= -->
     <section class="l-section">
       <h2>La <span>news</span>letter</h2>
       <p>
-        Films,<span>saveurs</span> et découvertes, ne manquez rien de
+        Films, <span>saveurs</span> et découvertes, ne manquez rien de
         l'expérience <span>CinéGusto</span>.
       </p>
       <div class="newsletter__cta">
-        <a href="#" class="cta empty">En savoir plus</a>
+        <a href="#" class="cta cta--empty">En savoir plus</a>
         <a href="#" class="cta">S'abonner</a>
       </div>
       <p class="smallText">
@@ -178,6 +197,7 @@
       </p>
     </section>
 
+    <!-- ======= NOS PARTENAIRES ======= -->
     <section class="dark l-section">
       <h2>Nos <span>partenaires</span></h2>
       <p>
@@ -185,17 +205,18 @@
         <span>soirée</span>, ils sont là.
       </p>
       <div class="partners">
-        <img src="Images/logo-fribourg-fr 1.svg" alt="" />
-        <img src="Images/Logo-GastroSuisse 1.svg" alt="" />
-        <img src="Images/Loto_mono 1.svg" alt="" />
-        <img src="Images/logo.bulle 1.svg" alt="" />
+        <img src="Images/logo-fribourg-fr 1.svg" alt="Canton de Fribourg" />
+        <img src="Images/Logo-GastroSuisse 1.svg" alt="GastroSuisse" />
+        <img src="Images/Loto_mono 1.svg" alt="Loterie Romande" />
+        <img src="Images/logo.bulle 1.svg" alt="Ville de Bulle" />
       </div>
     </section>
 
+    <!-- ======= FOOTER ======= -->
     <footer class="l-footer">
       <div class="notices l-notices">
         <a href="#">Conditions générales</a>
-        <a href="#">à propos de nous</a>
+        <a href="#">À propos de nous</a>
         <a href="#">Données personnelles</a>
         <a href="#">Newsletter</a>
       </div>

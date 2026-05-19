@@ -1,12 +1,16 @@
 footer {
   background-color: var(--color-red);
-  color: white;
-  padding: 5% 16px;
+  color: var(--color-linen);
+  padding: 40px 16px;
+
+  @media (min-width: 768px) {
+    padding: 60px 40px;
+  }
 }
 
 .notices {
   font-family: Outfit;
-  font-size: 10px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
