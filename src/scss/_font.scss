@@ -1,0 +1,48 @@
+h1 {
+  color: var(--Rouge, #c0392b);
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 162px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 162px */
+}
+
+h2 {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 40px */
+}
+
+p {
+  text-align: center;
+  font-family: Fraunces;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 159%; /* 38.16px */
+}
+
+.mystere {
+  text-align: center;
+
+  /* Mystere mobile */
+  font-family: Fraunces;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+
+h3 {
+  color: var(--Sable, #f2e8d5);
+  font-family: Fraunces;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,29 @@
+.l-button {
+  position: fixed;
+}
+
+.l-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.l-notices {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.l-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 50 px;
+}
+
+.l-films_row {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}

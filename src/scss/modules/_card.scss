@@ -1,0 +1,24 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-red);
+  border-radius: 13px;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-noir {
+  background-color: var(--color-brown-night);
+}
+
+.card p {
+  color: var();
+  font-family: Outfit;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card a {
+  display: none;
+}
