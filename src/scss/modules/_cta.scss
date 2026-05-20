@@ -29,4 +29,9 @@
     font-size: 14px;
     padding: 12px 28px;
   }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    padding: 16px 36px;
+  }
 }

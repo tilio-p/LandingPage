@@ -1,29 +1,15 @@
 .hero {
   color: var(--color-brown-night);
-  background-color: var(--color-linen);
   padding: 60px 16px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  position: relative;
 
-  // Image de fond à 5% d'opacité — le fond lin reste à 100%
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("../Images/Viet.png");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.05;
-  }
-
-  // Le contenu passe au-dessus du ::before
-  > * {
-    position: relative;
-    z-index: 1;
-  }
+  background-color: var(--color-linen);
+  background-image: url("../Images/Viet.png");
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: 768px) {
     min-height: 420px;

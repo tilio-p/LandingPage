@@ -23,6 +23,11 @@
 // Carte principale (plus grande, plus de padding)
 .card-main {
   padding: 28px 20px;
+  min-height: 200px;
+
+  .card_titre {
+    font-size: 32px;
+  }
 
   @media (min-width: 768px) {
     padding: 36px 24px;
@@ -89,7 +94,7 @@
   background-size: cover;
   background-position: center 30%;
   background-blend-mode: soft-light;
-  min-height: 220px;
+  min-height: 200px;
   align-items: center;
   justify-content: center;
 
@@ -154,6 +159,38 @@
   color: var(--color-linen);
   opacity: 0.8;
 }
+
+// -----------------------------------------------
+// DESKTOP — TYPOGRAPHIE PAR SECTION
+// -----------------------------------------------
+
+// Projection de films — grande carte rouge
+.films_grid .card-main {
+  @media (min-width: 1200px) {
+    .card_titre { font-size: 96px; }
+    .card_meta  { font-size: 12px; }
+  }
+}
+
+// Projection de films — deux petites cartes
+.films_grid .card-orange,
+.films_grid .card-noir {
+  @media (min-width: 1200px) {
+    .card_titre { font-size: 40px; }
+  }
+}
+
+// Ensemble du chef — toutes les cartes
+.chef__grid .card {
+  @media (min-width: 1200px) {
+    .card_titre            { font-size: 48px; }
+    .card_label, .card_meta { font-size: 12px; }
+  }
+}
+
+// -----------------------------------------------
+// LIEN D'ACTION
+// -----------------------------------------------
 
 // Lien d'action — caché sur mobile, visible sur tablette+
 .card_cta {
