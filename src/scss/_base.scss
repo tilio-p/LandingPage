@@ -31,6 +31,12 @@ body {
 .dark {
   background-color: var(--color-brown-night);
   color: var(--color-linen);
+  border-radius: 13px;
+}
+
+// Dernière section sombre : coins bas à 0 pour joindre le footer sans laisser passer le fond
+section.dark:last-of-type {
+  border-radius: 13px 13px 0 0;
 }
 
 span {

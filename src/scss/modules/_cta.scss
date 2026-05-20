@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 14px 24px;
+  padding: 12px 24px;
   border-radius: 50px;
   background-color: var(--color-orange);
   color: var(--color-linen);
@@ -15,7 +15,7 @@
   transition: opacity 0.2s;
 
   &:hover {
-    opacity: 0.85;
+    color: var(--color-brown-night);
   }
 
   // Variante vide (contour seulement)
@@ -27,6 +27,6 @@
 
   @media (min-width: 768px) {
     font-size: 14px;
-    padding: 16px 28px;
+    padding: 12px 28px;
   }
 }

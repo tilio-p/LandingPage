@@ -84,13 +84,38 @@
   flex: 1;
 }
 
-// Boutons App Store / Google Play
+// Wrapper stores + texte — colonne sur mobile, ligne sur desktop
+.vod__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+
+    p {
+      text-align: left;
+      max-width: 400px;
+    }
+  }
+}
+
+// Boutons App Store / Google Play — fond orange, images en colonne
 .stores {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 16px;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-orange);
+  border-radius: 13px;
+  padding: 20px 28px;
+  flex-shrink: 0;
 
   img {
     height: 44px;
