@@ -134,6 +134,16 @@
   align-self: center;
 }
 
+// Photo du chef dans la carte — remplit l'espace disponible
+.card__img--chef {
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 8px;
+  min-height: 120px;
+}
+
 // -----------------------------------------------
 // CONTENU DES CARTES
 // -----------------------------------------------
@@ -172,11 +182,16 @@
   }
 }
 
-// Projection de films — deux petites cartes
+// Projection de films — deux petites cartes (texte centré)
 .films_grid .card-orange,
 .films_grid .card-noir {
   @media (min-width: 1200px) {
-    .card_titre { font-size: 40px; }
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+
+    .card_titre { font-size: 40px; text-align: center; }
+    .card_meta  { font-size: 12px; text-align: center; }
   }
 }
 

@@ -2,13 +2,47 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>CineGusto | Destinations | Asie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titre & description -->
+    <title>CinéGusto — Destination Asie | 8 septembre 2027</title>
+    <meta
+      name="description"
+      content="Le 8 septembre 2027, CinéGusto vous invite en Asie. Films, saveurs et chef étoilé pour une soirée d'immersion culinaire et cinématographique à Bulle."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Images/Logo_final_32.png"
+    />
+    <link rel="apple-touch-icon" href="Images/Logo_final_32.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cinegusto-asie.ch" />
+    <meta property="og:title" content="CinéGusto — Destination Asie" />
+    <meta
+      property="og:description"
+      content="Le 8 septembre 2027, CinéGusto vous invite en Asie. Films, saveurs et chef étoilé pour une soirée d'immersion culinaire et cinématographique à Bulle."
+    />
+    <meta
+      property="og:image"
+      content="https://cinegusto-asie.ch/Images/Destination.png"
+    />
+    <meta property="og:locale" content="fr_CH" />
+    <meta property="og:locale:alternate" content="de_CH" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="scss/main.scss" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +50,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-
+  <body data-lang="fr">
     <!-- ======= HEADER ======= -->
     <header>
       <img src="Images/logo_CineGusto.png" alt="Logo CineGusto" />
@@ -70,7 +103,8 @@
       />
       <p>
         Une destination, une journée, une <span>expérience</span> unique.
-        Découvrez le programme complet sur <a href="#" class="link--orange">cinegusto.ch</a>
+        Découvrez le programme complet sur
+        <a href="#" class="link--orange">cinegusto.ch</a>
       </p>
     </section>
 
@@ -81,22 +115,19 @@
         Et si les films que vous alliez voir vous donnaient... faim ?
       </p>
       <div class="films_grid">
-        <div class="card card-main">
+        <a href="#" class="card card-main">
           <h3 class="card_titre">Jiro Dreams of Sushi</h3>
           <p class="card_meta">(États-Unis, 2011)</p>
-          <a href="#" class="card_cta">En savoir plus</a>
-        </div>
+        </a>
         <div class="l-films_row">
-          <div class="card card-orange">
+          <a href="#" class="card card-orange">
             <h3 class="card_titre">Le Voyage de Chihiro</h3>
             <p class="card_meta">(Japon, 2001)</p>
-            <a href="#" class="card_cta">En savoir plus</a>
-          </div>
-          <div class="card card-noir">
+          </a>
+          <a href="#" class="card card-noir">
             <h3 class="card_titre">Les Délices de Tokyo</h3>
             <p class="card_meta">(Japon - France, 2015)</p>
-            <a href="#" class="card_cta">En savoir plus</a>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -109,7 +140,12 @@
         et le palais ?
       </p>
       <div class="chef__grid">
-        <div class="card card-main card-sable card--chef-bg">
+        <div class="card card-main card-sable">
+          <img
+            src="Images/Chef_Nakamura.png"
+            alt="Chef Kenji Nakamura"
+            class="card__img--chef"
+          />
           <h3 class="card_titre">Kenji Nakamura</h3>
           <p class="card_label">Chef étoilé</p>
           <a href="#" class="card_cta">Découvrir le chef</a>
@@ -121,7 +157,11 @@
           </div>
           <div class="card card-orange card--centered">
             <h3 class="card_titre">Nigri de Saumon</h3>
-            <img src="Images/Nigri.png" alt="Nigri de saumon laqué au miso blanc" class="card__img" />
+            <img
+              src="Images/Nigri.png"
+              alt="Nigri de saumon laqué au miso blanc"
+              class="card__img"
+            />
             <p class="card_label">Laqué au miso blanc</p>
           </div>
         </div>
@@ -141,8 +181,8 @@
         </div>
         <p>
           Le <span>festival</span> ne s'arrête pas quand les lumières se
-          rallument. Téléchargez l'<span>app</span> et continuez le voyage, où que
-          vous soyez.
+          rallument. Téléchargez l'<span>app</span> et continuez le voyage, où
+          que vous soyez.
         </p>
       </div>
     </section>
